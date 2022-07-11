@@ -10,3 +10,24 @@ age = 30;
 // console.info("My name is " + myName = ", I'm " + age + " years old.");
 age = 31;
 // console.info("My name is " + myName = ", I'm " + age + " years old.");
+
+function showHomePage() {
+  document.getElementById("home").style.display = "block";
+}
+
+function showSkillsPage() {
+  document.getElementById("home").style.display = "none";
+  document.getElementById("skills").style.display = "block";
+}
+
+function showProjectsPage() {
+  document.getElementById("skills").style.display = "none";
+  document.getElementById("projects").style.display = "block";
+}
+
+function showLanguagesPage() {
+  document.getElementById("projects").style.display = "none";
+  document.getElementById("languages").style.display = "block";
+}
+
+showHomePage();

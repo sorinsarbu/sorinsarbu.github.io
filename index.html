@@ -22,10 +22,10 @@
       </div>
 
       <ul id="top-menu-bar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="languages.html">Languages</a></li>
+        <li><a href="#" onclick="showHomePage()">Home</a></li>
+        <li><a href="#" onclick="showSkillsPage()">Skills</a></li>
+        <li><a href="#" onclick="showProjectsPage()">Projects</a></li>
+        <li><a href="#" onclick="showLanguagesPage()">Languages</a></li>
       </ul>
     </header>
 
@@ -52,12 +52,7 @@
       </div>
 
       <div id="main">
-        <div class="page">
-          <h2>Home</h2>
-          <p>About me...</p>
-        </div>
-
-        <div class="page">
+        <div id="home" class="page">
           <h1>About me</h1>
           <p>Welcome ...</p>
 
@@ -68,22 +63,22 @@
           </ol>
         </div>
 
-        <div class="page">
+        <div id="skills" class="page">
           <h1>My Skills</h1>
 
-          <ul class="skills">
+          <ul>
             <li><span>HTML</span></li>
             <li>CSS</li>
             <li>JS</li>
           </ul>
         </div>
 
-        <div class="page">
+        <div id="projects" class="page">
           <h2>Projects</h2>
         </div>
 
-        <h1>Known Languages</h1>
-        <div class="page">
+        <div id="languages" class="page">
+          <h2>Known Languages</h2>
           <table>
             <tr>
               <td>Romanian</td>
