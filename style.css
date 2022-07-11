@@ -21,12 +21,26 @@ body {
   flex: 3;
 }
 
+
 #header-wrapper {
   display: flex;
   flex-direction: row;
+  font-size: 1.2em;
 }
+
 #header-info {
   flex: 1;
+}
+
+
+
+#avatar {
+ padding: 10px 10px 0px 10px; 
+}
+
+#avatar img {  
+  border-radius: 10%;
+  border: 3px solid #fff;
 }
 
 h1 {
@@ -34,15 +48,17 @@ h1 {
 }
 
 p {
-  color: blue;
+  color: black
 }
 
 #motto {
   margin: 0;
   text-align: left;
 }
+
 #motto span {
   font-weight: bold;
+  color: blue;
 }
 
 .favorite {
@@ -54,6 +70,7 @@ p {
   text-align: center;
   background-color: #334455;
   color: #fff;
+  font-size: large;
 }
 
 #top-menu-bar li {
@@ -64,9 +81,11 @@ p {
 
 #top-menu-bar a {
 text-decoration: none;
-padding: 0 15px;
-/* margin: 0 15px; */
+padding: 5px 15px 5px 15px;
+margin: 4px 0;
+display: inline-block;
 color: #fff;
+border-radius: 1.2em;
 }
 
 #top-menu-bar a:visited {

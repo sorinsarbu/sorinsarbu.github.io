@@ -10,13 +10,3 @@ age = 30;
 // console.info("My name is " + myName = ", I'm " + age + " years old.");
 age = 31;
 // console.info("My name is " + myName = ", I'm " + age + " years old.");
-
-var jobTitle = "<span>Web Designer</span> - Student";
-var mottoElement = document.getElementById("motto");
-
-console.warn(mottoElement);
-console.info(mottoElement.innerHTML);
-
-// mottoElement.innerHTML = mottoElement.innerHTML + " & " + jobTitle
-
-mottoElement.innerHTML += " & " + jobTitle;
