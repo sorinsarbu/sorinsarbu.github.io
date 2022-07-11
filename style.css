@@ -108,3 +108,32 @@ border-radius: 1.2em;
 .page h2 {
   margin-top: 0;
 }
+
+#side-menu {
+  flex: 1;
+  padding: 0px 15px 0px 15px;
+}
+#side-menu > section {
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 0 1px;
+}
+#side-menu > section h3 {
+  margin: 0 0 10px 0;
+  color: green;
+  font-size: 1.5em;
+}
+ 
+
+#contact .form-row {
+  padding: 4px 0;
+  text-align: left;
+}
+
+.submit {
+  padding: 4px 4px 2px 0px;
+}
+
+
