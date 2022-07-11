@@ -21,7 +21,6 @@ body {
   flex: 3;
 }
 
-
 #header-wrapper {
   display: flex;
   flex-direction: row;
@@ -32,13 +31,11 @@ body {
   flex: 1;
 }
 
-
-
 #avatar {
- padding: 10px 10px 0px 10px; 
+  padding: 10px 10px 0px 10px;
 }
 
-#avatar img {  
+#avatar img {
   border-radius: 10%;
   border: 3px solid #fff;
 }
@@ -48,7 +45,7 @@ h1 {
 }
 
 p {
-  color: black
+  color: black;
 }
 
 #motto {
@@ -80,12 +77,12 @@ p {
 }
 
 #top-menu-bar a {
-text-decoration: none;
-padding: 5px 15px 5px 15px;
-margin: 4px 0;
-display: inline-block;
-color: #fff;
-border-radius: 1.2em;
+  text-decoration: none;
+  padding: 5px 15px 5px 15px;
+  margin: 4px 0;
+  display: inline-block;
+  color: #fff;
+  border-radius: 1.2em;
 }
 
 #top-menu-bar a:visited {
@@ -98,11 +95,18 @@ border-radius: 1.2em;
 }
 
 .page {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: 10px 0 10px 10px;
   background: #fff;
-  border-radius: 0.5rem;
-  padding: 1.5rem
-  border: 1px solid gray;
-  box-shadow: 0 4px ;
+  border-radius: 5px;
+  box-shadow: 0 1px 0 1px;
+}
+
+.page h1 {
+  margin: 0 0 10px 0;
+  color: green;
+  font-size: 1.5em;
 }
 
 .page h2 {
@@ -125,7 +129,6 @@ border-radius: 1.2em;
   color: green;
   font-size: 1.5em;
 }
- 
 
 #contact .form-row {
   padding: 4px 0;
@@ -136,4 +139,17 @@ border-radius: 1.2em;
   padding: 4px 4px 2px 0px;
 }
 
+#languages {
+  padding-bottom: 20px;
+}
 
+#languages table {
+  width: 50%;
+  border-collapse: collapse;
+}
+
+#languages table th,
+#languages table td {
+  border: 1px solid gray;
+  padding: 5px 0 0 5px;
+}
