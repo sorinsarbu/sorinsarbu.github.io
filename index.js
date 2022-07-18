@@ -11,33 +11,42 @@ age = 30;
 age = 31;
 // console.info("My name is " + myName = ", I'm " + age + " years old.");
 
+function hidePage(id) {
+  console.info("hide", id);
+  document.getElementById(id).style.display = "none";
+}
+
+function showPage(id) {
+  console.warn("show", id);
+  document.getElementById(id).style.display = "block";
+}
+
 function showHomePage() {
-  document.getElementById("skills").style.display = "none";
-  document.getElementById("projects").style.display = "none";
-  document.getElementById("languages").style.display = "none";
-  document.getElementById("home").style.display = "block";
+  hidePage("skills");
+  hidePage("projects");
+  hidePage("languages");
+  showPage("home");
 }
 
 function showSkillsPage() {
-  console.info;
-  document.getElementById("home").style.display = "none";
-  document.getElementById("projects").style.display = "none";
-  document.getElementById("languages").style.display = "none";
-  document.getElementById("skills").style.display = "block";
+  hidePage("home");
+  hidePage("projects");
+  hidePage("languages");
+  showPage("skills");
 }
 
 function showProjectsPage() {
-  document.getElementById("home").style.display = "none";
-  document.getElementById("skills").style.display = "none";
-  document.getElementById("languages").style.display = "none";
-  document.getElementById("projects").style.display = "block";
+  hidePage("home");
+  hidePage("skills");
+  hidePage("languages");
+  showPage("projects");
 }
 
 function showLanguagesPage() {
-  document.getElementById("home").style.display = "none";
-  document.getElementById("skills").style.display = "none";
-  document.getElementById("projects").style.display = "none";
-  document.getElementById("languages").style.display = "block";
+  hidePage("home");
+  hidePage("skills");
+  hidePage("projects");
+  showPage("languages");
 }
 
 showHomePage();
