@@ -154,3 +154,26 @@ p {
   border: 1px solid gray;
   padding: 5px 0 0 5px;
 }
+
+#footer-dark {
+  text-align: center;
+  background-color: #334455;
+  color: #fff;
+  font-size: medium;
+}
+
+#footer-dark a {
+  text-decoration: none;
+  padding: 5px 15px 5px 15px;
+  margin: 4px 0;
+  display: inline-block;
+  color: #fff;
+}
+
+#footer-dark a:visited {
+  color: #fff;
+}
+
+#footer-dark a:hover {
+  text-decoration: underline;
+}
