@@ -167,13 +167,13 @@ p {
 }
 
 #languages table {
-  width: 50%;
+  width: 30%;
   border-collapse: collapse;
 }
 
 #languages table th,
 #languages table td {
-  border: 1px solid gray;
+  border: 1px solid rgb(58, 29, 138);
   padding: 5px 0 0 5px;
 }
 
@@ -206,4 +206,42 @@ p {
   height: 0.8px;
   background-color: blue;
   margin-bottom: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 50%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {
+  width: 70%;
+  background-color: #04aa6d;
+}
+.css {
+  width: 60%;
+  background-color: #2196f3;
+}
+.js {
+  width: 25%;
+  background-color: #f44336;
+}
+.php {
+  width: 60%;
+  background-color: #808080;
+}
+
+.lang {
+  color: #190878;
+  font-style: italic;
 }
