@@ -132,7 +132,8 @@ p {
 }
 
 .page h2 {
-  margin-top: 0;
+  margin: 0 0 10px 0;
+  color: green;
 }
 
 #side-menu {
@@ -197,4 +198,12 @@ p {
 
 #footer-dark a:hover {
   text-decoration: underline;
+}
+
+.line {
+  display: block;
+  width: 120px;
+  height: 0.8px;
+  background-color: blue;
+  margin-bottom: 10px;
 }

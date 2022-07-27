@@ -21,7 +21,7 @@ function show(id) {
   document.getElementById(id).style.display = "block";
 }
 
-var activePage = "skills";
+var activePage = "home";
 
 function showPage(nextPage) {
   console.warn("change", activePage, "to", nextPage);
