@@ -32,12 +32,13 @@ body {
 }
 
 #avatar {
-  padding: 10px 10px 0px 10px;
+  padding: 16px 16px 0px 16px;
 }
 
 #avatar img {
-  border-radius: 10%;
+  border-radius: 50%;
   border: 3px solid #fff;
+  width: 140px;
 }
 
 h1 {
@@ -46,6 +47,21 @@ h1 {
 
 p {
   color: black;
+}
+
+#short {
+  padding: 2rem 0rem 0rem 0rem;
+}
+
+#short h2 {
+  font-size: 32px;
+  color: rgb(22, 142, 186);
+  position: absolute;
+}
+
+#short p {
+  font-size: 0.9em;
+  padding-top: 50px;
 }
 
 #motto {
