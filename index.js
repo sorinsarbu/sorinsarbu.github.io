@@ -21,7 +21,7 @@ function show(id) {
   document.getElementById(id).style.display = "block";
 }
 
-var activePage = "home";
+var activePage = "skills";
 
 function showPage(nextPage) {
   console.warn("change", activePage, "to", nextPage);
@@ -47,3 +47,42 @@ function initEvents() {
 
 showPage(activePage);
 initEvents();
+
+function displaySkills(skills) {
+  console.info("displaySkills");
+
+  var ul = document.querySelector("#skills ul");
+  var skills = [
+    { name: "js", endorcements: 15, favorite: true },
+    { name: "css", endorcements: 5, favorite: true },
+    { name: "html", endorcements: 10, favorite: false },
+  ];
+  skills.sort(function (a, b) {
+    return b.endorcements - a.endorcements;
+    // if (a.name.toLowerCase < b.name.toLowerCase) {
+    //   return -1;
+    // }
+    // if (a.name.toLowerCase > b.name.toLocaleLowerCase) {
+    //   return 1;
+    // }
+    // return 0;
+  });
+
+  console.info(skills);
+  for (var i = 0; i < skills.length; i = i++) {
+    ul.innerHTML +=
+      "<li>${skills[i].name} - ${skills[i].endorcements} - <li>${skills[i].favorite}</li>";
+  }
+}
+
+function loadSkills() {
+  fetch("skills.json")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (skills) {
+      console.warn("am primit sau nu?", skills);
+      displaySkills(skills);
+    });
+}
+loadSkills();
